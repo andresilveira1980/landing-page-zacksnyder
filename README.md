@@ -1,4 +1,4 @@
-# Landing Page Zack Snyder: Um Mestre da Ação e da Narrativa
+# Landing Page Zack Snyder
 
 ## Sobre
 
