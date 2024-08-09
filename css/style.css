@@ -116,3 +116,64 @@ footer a:hover {
     color: #b22222;
     font-weight: bold;
 }
+
+#filmes-favoritos {
+    background-color: #0a0a0a;
+    color: #e5e5e5;
+    padding: 25px;
+    border: 3px solid #ffd700;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+#filmes-favoritos h2 {
+    color: #00bfff;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
+}
+
+#filmes-favoritos label, 
+#filmes-favoritos legend {
+    color: #ffd700;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#filmes-favoritos input[type="text"], 
+#filmes-favoritos input[type="number"], 
+#filmes-favoritos input[type="radio"], 
+#filmes-favoritos input[type="checkbox"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #00bfff;
+    background-color: #1c1c1c;
+    color: #e5e5e5;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+#filmes-favoritos p {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#filmes-favoritos fieldset {
+    border: 2px solid #00bfff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#filmes-favoritos input[type="radio"] + label, 
+#filmes-favoritos input[type="checkbox"] + label {
+    display: inline-block;
+    margin-left: 10px;
+}
+
