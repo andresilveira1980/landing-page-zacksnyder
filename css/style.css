@@ -141,12 +141,17 @@ section {
 }
 
 #biografia {
-    background-color: #0c0c0c;
+    background-color: rgba(0, 0, 0, 9);
+    backdrop-filter: blue(5px);
     color: #e0e0e0;
     padding: 20px;
     border: 2px solid #8b0000;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(139, 0, 0, 0.8);
+    background-image: url("/pics/ldpgzack\ \(8\).jpg");
+    opacity: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #biografia h2 {
@@ -168,7 +173,7 @@ section {
 }
 
 #biografia strong {
-    color: #b22222;
+    color: #631111;
     font-weight: bold;
 }
 
@@ -179,6 +184,11 @@ section {
     border: 3px solid #ffd700;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    
+    background-image: url("/pics/ldpgzack\ \(4\).jpg");
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #filmes-favoritos h2 {
