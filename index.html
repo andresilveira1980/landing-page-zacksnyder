@@ -52,64 +52,71 @@
             </p>
         </div>
     </section>    
-    <section class="bg-light text-dark py-4" id="filmes-favoritos">
-        <h2>Qual Filme é o seu favorito?</h2>
-        <form>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" aria-describedby="nome-desc" required>
-            <p id="nome-desc">Este campo é onde você pode digitar o seu nome.</p>
+    <section class="bg-light text-dark py-4" id="filmes-favoritos" style="background-image: url('path-to-image.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="container">
+            <h2 class="text-center mb-4">Qual Filme é o seu favorito?</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="form-control" aria-describedby="nome-desc" required>
+                    <small id="nome-desc" class="form-text text-muted">Este campo é onde você pode digitar o seu nome.</small>
+                </div>
     
-            <label for="idade">Idade: </label>
-            <input type="number" name="idade" id="idade" aria-describedby="idade-desc" min="1" required>
-            <p id="idade-desc">Digite a sua idade neste campo.</p>
+                <div class="mb-3">
+                    <label for="idade" class="form-label">Idade:</label>
+                    <input type="number" name="idade" id="idade" class="form-control" aria-describedby="idade-desc" min="1" required>
+                    <small id="idade-desc" class="form-text text-muted">Digite a sua idade neste campo.</small>
+                </div>
     
-            <fieldset>
-                <legend>Sexo: Selecione uma das opções</legend>
-                <div>
-                    <input type="radio" name="sexo" id="sexo-masculino" value="masculino" required>
-                    <label for="sexo-masculino">Masculino</label>
-                </div>
-                <div>
-                    <input type="radio" name="sexo" id="sexo-feminino" value="feminino" required>
-                    <label for="sexo-feminino">Feminino</label>
-                </div>
-                <div>
-                    <input type="radio" name="sexo" id="sexo-outro" value="outro" required>
-                    <label for="sexo-outro">Outro</label>
-                </div>
-                <p>Selecione uma das opções: “Masculino”, “Feminino” ou “Outro”.</p>
-            </fieldset>
+                <fieldset class="mb-3">
+                    <legend>Sexo: Selecione uma das opções</legend>
+                    <div class="form-check">
+                        <input type="radio" name="sexo" id="sexo-masculino" value="masculino" class="form-check-input" required>
+                        <label for="sexo-masculino" class="form-check-label">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="sexo" id="sexo-feminino" value="feminino" class="form-check-input" required>
+                        <label for="sexo-feminino" class="form-check-label">Feminino</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" name="sexo" id="sexo-outro" value="outro" class="form-check-input" required>
+                        <label for="sexo-outro" class="form-check-label">Outro</label>
+                    </div>
+                    <small class="form-text text-muted">Selecione uma das opções: “Masculino”, “Feminino” ou “Outro”.</small>
+                </fieldset>
     
-            <fieldset>
-                <legend>Filmes: Marque as caixas correspondentes aos filmes que você gosta</legend>
-                <div>
-                    <input type="checkbox" name="filme" id="filme-300" value="filme-300">
-                    <label for="filme-300">300, estrelado por Gerard Butler</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="filme" id="filme-watchmen" value="filme-watchmen">
-                    <label for="filme-watchmen">Watchmen - O Filme</label>
-                </div>   
-                <div>
-                    <input type="checkbox" name="filme" id="filme-madrugada-dos-mortos" value="filme-madrugada-dos-mortos">
-                    <label for="filme-madrugada-dos-mortos">Madrugada dos Mortos</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="filme" id="filme-batman-vs-superman" value="filme-batman-vs-superman">
-                    <label for="filme-batman-vs-superman">Batman vs. Superman: A Origem da Justiça</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="filme" id="filme-homem-de-aco" value="filme-homem-de-aco">
-                    <label for="filme-homem-de-aco">O Homem de Aço</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="filme" id="filme-outro" value="filme-outro">
-                    <label for="filme-outro">Outro</label>               
-                </div>
-                <p>As opções incluem “300, estrelado por Gerard Butler”, “Watchmen - O Filme”, “Madrugada dos Mortos”, “Batman vs. Superman: A Origem da Justiça” e “O Homem de Aço”. Se nenhum desses filmes se aplica, marque a opção “Outro”.</p>
-            </fieldset>
-        </form>
+                <fieldset class="mb-3">
+                    <legend>Filmes: Marque as caixas correspondentes aos filmes que você gosta</legend>
+                    <div class="form-check">
+                        <input type="checkbox" name="filme" id="filme-300" value="filme-300" class="form-check-input">
+                        <label for="filme-300" class="form-check-label">300, estrelado por Gerard Butler</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="filme" id="filme-watchmen" value="filme-watchmen" class="form-check-input">
+                        <label for="filme-watchmen" class="form-check-label">Watchmen - O Filme</label>
+                    </div>   
+                    <div class="form-check">
+                        <input type="checkbox" name="filme" id="filme-madrugada-dos-mortos" value="filme-madrugada-dos-mortos" class="form-check-input">
+                        <label for="filme-madrugada-dos-mortos" class="form-check-label">Madrugada dos Mortos</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="filme" id="filme-batman-vs-superman" value="filme-batman-vs-superman" class="form-check-input">
+                        <label for="filme-batman-vs-superman" class="form-check-label">Batman vs. Superman: A Origem da Justiça</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="filme" id="filme-homem-de-aco" value="filme-homem-de-aco" class="form-check-input">
+                        <label for="filme-homem-de-aco" class="form-check-label">O Homem de Aço</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="filme" id="filme-outro" value="filme-outro" class="form-check-input">
+                        <label for="filme-outro" class="form-check-label">Outro</label>               
+                    </div>
+                    <small class="form-text text-muted">As opções incluem “300, estrelado por Gerard Butler”, “Watchmen - O Filme”, “Madrugada dos Mortos”, “Batman vs. Superman: A Origem da Justiça” e “O Homem de Aço”. Se nenhum desses filmes se aplica, marque a opção “Outro”.</small>
+                </fieldset>
+            </form>
+        </div>
     </section>
+    
     <section class="bg-light text-dark py-4" id="time-snyder">
         <h2>Quem fez parte do time Snyder?</h2>
         <div>
