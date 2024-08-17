@@ -57,9 +57,11 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(139, 0, 0, 0.8);
     background-image: url("/pics/ldpgzack\ \(8\).jpg");
+    background-size: 100%;
     opacity: 0.5;
     background-position: center;
     background-repeat: no-repeat;
+    filter: brightness(70%);
 }
 
 #biografia h2 {
@@ -77,6 +79,8 @@ section {
     font-size: 1.2em;
     line-height: 1.8;
     margin-bottom: 20px;
+    color: rgb(245, 245, 250);
+    text-shadow: #000000;
 }
 
 #biografia strong {
