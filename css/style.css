@@ -22,26 +22,36 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background: linear-gradient(90deg, #dfd5d5 50%, #e53935 50%);
+    background: linear-gradient(90deg, #000000 50%, #e53935 50%);
     color: white;
     padding: 20px;
     text-align: center;
     border-bottom: 5px solid #555;
 }
 
+body > header > div > nav .nav-link{
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    
+    
+};
 
 section {
     padding: 20px;
-    background-color: #f4f4f4;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #biografia {
-    background-color: rgba(0, 0, 0, 9);
     backdrop-filter: blue(5px);
-    color: #e0e0e0;
     padding: 20px;
     border: 2px solid #8b0000;
     border-radius: 10px;
@@ -53,7 +63,6 @@ section {
 }
 
 #biografia h2 {
-    color: #b22222;
     font-family: "Spartan", sans-serif;
     font-size: 2.5em;
     text-align: center;
@@ -71,26 +80,22 @@ section {
 }
 
 #biografia strong {
-    color: #631111;
     font-weight: bold;
 }
 
 #filmes-favoritos {
-    background-color: #0a0a0a;
-    color: #e5e5e5;
     padding: 25px;
     border: 3px solid #ffd700;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-    
-    background-image: url("/pics/ldpgzack\ \(4\).jpg");
+    color: rgb(244, 244, 244);
+    background-image: url("/pics/ldpgzack\ \(21\).jpg");
     opacity: 0.8;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #filmes-favoritos h2 {
-    color: #00bfff;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 2.5em;
     text-align: center;
@@ -102,7 +107,6 @@ section {
 
 #filmes-favoritos label, 
 #filmes-favoritos legend {
-    color: #ffd700;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 1.2em;
     margin-bottom: 10px;
@@ -116,8 +120,6 @@ section {
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #00bfff;
-    background-color: #1c1c1c;
-    color: #e5e5e5;
     font-family: "Trebuchet MS", sans-serif;
 }
 
@@ -141,8 +143,6 @@ section {
 }
 
 #time-snyder, #comentarios {
-    background-color: #262626;
-    color: #b3b3b3;
     padding: 25px;
     border: 3px solid #ff4500;
     border-radius: 8px;
@@ -151,7 +151,6 @@ section {
 }
 
 #time-snyder h2, #comentarios h2 {
-    color: #ff4500;
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 25px;
@@ -173,27 +172,14 @@ section {
     border: 1px solid #ff4500;
 }
 
-#time-snyder th {
-    background-color: #404040;
-    color: #ff4500;
-}
 
 #time-snyder caption {
     font-size: 1.5em;
-    color: #ff4500;
     margin-bottom: 15px;
 }
 
-#time-snyder tr:nth-child(even) {
-    background-color: #333333;
-}
-
-#time-snyder tr:nth-child(odd) {
-    background-color: #2c2c2c;
-}
 
 #comentarios h3 {
-    color: #ff4500;
     font-size: 2em;
     margin-bottom: 15px;
 }
@@ -216,21 +202,17 @@ section {
 
 #filmografia {
     padding: 20px;
-    background-color: #000;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.6) url("/pics/ldpgzack\ \(20\).jpg") no-repeat center center;
+    background-size: cover;
     border: 3px solid #0078d4;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    background-image: url("/pics/ldpgzack\ \(20\).jpg");
     opacity: 0.8;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #filmografia h2 {
     font-size: 3em;
-    color: #0078d4;
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -238,7 +220,6 @@ section {
 
 #filmografia h3 {
     font-size: 2.5em;
-    color: #0078d4;
     margin-bottom: 15px;
     border-bottom: 2px solid #0078d4;
     padding-bottom: 10px;
@@ -255,7 +236,6 @@ section {
     border-bottom: 1px solid #444;
     padding-bottom: 10px;
 }
-
 
 footer {
     background-color: #222;
